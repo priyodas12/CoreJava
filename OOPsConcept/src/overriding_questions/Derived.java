@@ -3,6 +3,7 @@ package overriding_questions;
 
 class Test 
 { 
+	//added comments
     void myMethod() 
     { 
         System.out.println("GeeksforGeeks"); 

@@ -2,6 +2,7 @@ package overriding_questions;
 
 class GFG 
 { 
+	//added comments
     protected void getData() 
     { 
         System.out.println("Inside GFG"); 
