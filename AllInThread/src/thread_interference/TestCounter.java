@@ -38,10 +38,7 @@ public class TestCounter {
 				}
 		    };
 		    
-		       Object print() {
-		    	return;
-		    }
-		    
+		      
 		 Thread t1=new Thread(r1);
 		 Thread t2=new Thread(r2);
 		 
