@@ -2,7 +2,8 @@ package predicate;
 
 import java.util.function.Predicate;
 /*
- * boolean valued function;
+ * any input<generic> return type<boolean>:
+ * Usecase:Condition check
  * 
  */
 
