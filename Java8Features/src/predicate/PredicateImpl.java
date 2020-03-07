@@ -14,12 +14,9 @@ public class PredicateImpl {
 		//Test is abstract method in predicate(SAM)
 		System.out.println(j.test(10));
 		System.out.println(j.test(100));
-		
 		//String length check
 		Predicate<String> s=s1->s1.length()>8;
-		System.out.println(s.test("ajdhjksdj"));
-		
-		
+		System.out.println(s.test("ajdhjksdj"));	
 	}
 
 }
