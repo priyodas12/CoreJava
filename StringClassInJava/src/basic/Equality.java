@@ -15,6 +15,7 @@ public class Equality {
 		System.out.println(s1.equals(s2)?"equal":"!equal");
 		System.out.println(s1.equals(s3)?"equal":"!equal");
 		System.out.println(s3.equals(s4)?"equal":"!equal");
+		
 	}
 
 }
