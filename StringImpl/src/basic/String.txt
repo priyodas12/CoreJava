@@ -1,0 +1,24 @@
+
+In general, an immutable object can be made by defining a class which does not have any of its members exposed,
+and does not have any setters.
+
+The following class will create an immutable object
+
+class ImmutableInt {
+  private final int value;
+
+  public ImmutableInt(int i) {
+    value = i;
+  }
+
+  public int getValue() {
+    return value;
+  }
+}
+
+Advantage of Immutability:
+
+Caching purpose
+Concurrent environment (ThreadSafe)
+Hard for inheritance
+Value cannot be changed in any environment
