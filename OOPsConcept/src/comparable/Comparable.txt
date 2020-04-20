@@ -1,0 +1,70 @@
+Taken from:https://java-journal.blogspot.com/2011/01/when-to-use-comparable-and-when-to-use.html
+
+This article outline some of the facts which help you decide in which situations one should use Comparable and in which Comparator.
+
+1) Code Availabilty:
+-------------------
+
+The first thing to note is that while using Comparable you have to implement it in your class i.e you need to change your class. Example
+
+  public class Book implements Comparable{
+   ...
+  }
+
+For this, code of that class should be availaible to you . If you dont have access to the code of that class (say class belongs to third party), then there is no choice but to use Comparator because Comparator does not need to change the original class.
+
+2) Single Versus Multiple Sorting Criteria:
+-------------------------------------------
+
+If you have only single sorting criteria to sort your elements then you can use Comparable but if you have more than one sorting criterias then you have to go for Comparator also.
+
+3) Arays.sort() and Collection.sort():
+--------------------------------------
+
+Using Comparable has a advantage over Comparator. If your class implements Comparable then Arrays.sort() and Collections.sort() can sort its instances automatically. You do not need to write separate comparators and pass them to overloaded sort() as shown here.
+
+4) As keys in SortedMap and SortedSet:
+--------------------------------------
+
+This is another advantage of Comparable over Comparator. Objects which implement Comparable interface can be used as keys in a SortedMap( like TreeMap) or as elements in a SortedSet  (like TreeSet). Otherwise you have to write separate Comparator and pass it in the constructor of TreeMap.
+
+5) More Number of classes Versus flexibilty:
+-------------------------------------------
+
+Use of Comparable does not require creation of extra classes while use of Comparator requires writing of separate comparators i.e more number of classes.
+
+But this has a advantage also.You can add as many sorting criteria later as you want or modify the existing ones without changing the class whose instances you are sorting.
+
+ Thus comparators provides flexibilty while Comparable avoids extra classes.
+
+Note that you can also write Comparators as anonymous classes. In that case you can avoid separate comparators also.
+
+6) Interclass comparisions:
+--------------------------
+
+If you are going to compare instances of same class then you should use Comparable. Though we can also compare objects of different types while using Comparable as shown here but we should avoid it.
+
+If you are going to compare instances of different classes then you should use Comparator. But this was valid upto  pre Java 5, before the introduction of generics.
+
+With the introduction of generics syntax of Comparator has been changed from :
+
+public interface Comparator  to   public interface Comparator <T>
+
+and of compare() from:
+
+public int compare(Object o1, Object o2)  to  public int compare(T o1,T o2)
+
+As you are seeing in new syntax both o1 and o2 are of type T. If their types would be different as:
+
+compare(Integer o1, String o2) 
+
+then this will give compile time error.
+
+Therefore if generic form of compare() is used then it compares objects of only same types.
+
+With non generic form of compare() you can still compare objects of different types.
+
+7) Natural Order:
+----------------
+
+If you are going to sort elements according to their natural order then you should use Comparable and for any other order different from natural order Comparator should be used.
