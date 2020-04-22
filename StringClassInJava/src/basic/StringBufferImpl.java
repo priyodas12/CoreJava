@@ -12,5 +12,9 @@ public class StringBufferImpl {
 		sb.append("dajlksdjjaksdkaslda");
 		System.out.println(sb.capacity());
 		System.out.println(sb);
+		//now capacity will be initial capacity+string literal capacity
+		sb=new StringBuffer("asahsa");//22
+		System.out.println(sb.capacity());
+		System.out.println(sb);
 	}
 }
