@@ -15,6 +15,7 @@ public class TwoDimensionalArrayList {
 		listOfList.add(a2);
 		
 		System.out.println(listOfList);
+		
 	}
 
 }

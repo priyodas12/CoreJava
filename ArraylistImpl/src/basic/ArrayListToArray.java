@@ -14,12 +14,15 @@ public class ArrayListToArray {
 		
 		list=Arrays.asList(arr);
 		
+		//check list type
 		System.out.println(list instanceof List);
 		
 		Object [] arr2=new Integer[list.size()];
 		
+		//convert to array type
 		arr2=list.toArray(arr2);
 		
+		//check array type
 		System.out.println(arr2.getClass().isArray());
 		
 		System.out.println(Arrays.toString(arr2));

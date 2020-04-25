@@ -13,7 +13,9 @@ public class ArrayToArrayList {
 		l=Arrays.asList(a);
 		
 		System.out.println("to print all element sequentially");
+		
 		Iterator it=l.iterator();
+		
 		while(it.hasNext()) {
 			System.out.println(it.next());
 		}

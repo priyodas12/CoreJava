@@ -5,6 +5,7 @@ import java.util.List;
 
 public class InternalOfArrayList {
 
+	@SuppressWarnings("deprecation")
 	public static void main(String[] args) {
 		List<Integer> l=new ArrayList<Integer>();
 		l.add(new Integer(20));
