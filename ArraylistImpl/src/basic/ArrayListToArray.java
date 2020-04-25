@@ -7,17 +7,22 @@ import java.util.List;
 public class ArrayListToArray {
 
 	public static void main(String[] args) {
-		Integer [] a= {2,3,4,5};
-		List <Integer> list=new ArrayList<Integer>();
-		list=Arrays.asList(a);
+		Integer [] arr=new Integer[]{1,2,3,4,5,6};
 		
-		//1.make casted type array with same size of ArrayList.
-		//convert ArrayList to array.
-		Integer[] a1=new Integer[list.size()];
-		a1=list.toArray(a1);
+		//convert to ArrayList
+		List<Integer> list=new ArrayList<Integer>();
 		
-		System.out.println(Arrays.toString(a1));
-		//System.out.println(Arrays.deepToString(a1));//to print multidimensional array.
+		list=Arrays.asList(arr);
+		
+		System.out.println(list instanceof List);
+		
+		Object [] arr2=new Integer[list.size()];
+		
+		arr2=list.toArray(arr2);
+		
+		System.out.println(arr2.getClass().isArray());
+		
+		System.out.println(Arrays.toString(arr2));
 		
 	}
 
