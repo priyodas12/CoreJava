@@ -21,7 +21,7 @@ public class ArrayToArrayList {
 		System.out.println("by java 8");
 		l.stream().forEach(System.out::println);
 		//or
-		l.stream().forEach(x->System.out.println(x));
+		//l.stream().forEach(x->System.out.println(x));
 		
 	}
 
