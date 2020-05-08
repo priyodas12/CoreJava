@@ -15,6 +15,12 @@ public class DeadLockImpl {
 				}
 				synchronized (s2) {
 					for (int i = 0; i < 10; i++) {
+						try {
+							Thread.sleep(1000);
+						} catch (InterruptedException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
 						System.out.println("From"+Thread.currentThread().getName());
 					}
 					
@@ -23,15 +29,21 @@ public class DeadLockImpl {
 		};
 		
 		Runnable r2=()->{
-			synchronized (s2) {
+			synchronized (s1) {
 				try {
-					Thread.sleep(1000);
+					Thread.sleep(1200);
 					} catch (InterruptedException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}
-					synchronized (s1) {
+					synchronized (s2) {
 						for (int i = 0; i <10; i++) {
+							try {
+								Thread.sleep(1000);
+							} catch (InterruptedException e) {
+								// TODO Auto-generated catch block
+								e.printStackTrace();
+							}
 							System.out.println("From"+Thread.currentThread().getName());
 						}
 						}			

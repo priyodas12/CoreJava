@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AllInThread/AllInThread.iml" filepath="$PROJECT_DIR$/AllInThread/AllInThread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ArrayImpl/ArrayImpl.iml" filepath="$PROJECT_DIR$/ArrayImpl/ArrayImpl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ArraylistImpl/ArraylistImpl.iml" filepath="$PROJECT_DIR$/ArraylistImpl/ArraylistImpl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CopyOnWriteArrayListImpl/CopyOnWriteArrayListImpl.iml" filepath="$PROJECT_DIR$/CopyOnWriteArrayListImpl/CopyOnWriteArrayListImpl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExecutorService/ExecutorService.iml" filepath="$PROJECT_DIR$/ExecutorService/ExecutorService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hackerrank/Hackerrank.iml" filepath="$PROJECT_DIR$/Hackerrank/Hackerrank.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HashMapImpl/HashMapImpl.iml" filepath="$PROJECT_DIR$/HashMapImpl/HashMapImpl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/InnerClasses/InnerClasses.iml" filepath="$PROJECT_DIR$/InnerClasses/InnerClasses.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Iterator/Iterator.iml" filepath="$PROJECT_DIR$/Iterator/Iterator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JVM_Architechture/JVM_Architechture.iml" filepath="$PROJECT_DIR$/JVM_Architechture/JVM_Architechture.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java8Features/Java8Features.iml" filepath="$PROJECT_DIR$/Java8Features/Java8Features.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OOPsConcept/OOPsConcept.iml" filepath="$PROJECT_DIR$/OOPsConcept/OOPsConcept.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Overloading/Overloading.iml" filepath="$PROJECT_DIR$/Overloading/Overloading.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Overriding/Overriding.iml" filepath="$PROJECT_DIR$/Overriding/Overriding.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RegularExpressionInString/RegularExpressionInString.iml" filepath="$PROJECT_DIR$/RegularExpressionInString/RegularExpressionInString.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StringClassInJava/StringClassInJava.iml" filepath="$PROJECT_DIR$/StringClassInJava/StringClassInJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StringImpl/StringImpl.iml" filepath="$PROJECT_DIR$/StringImpl/StringImpl.iml" />
+    </modules>
+  </component>
+</project>
