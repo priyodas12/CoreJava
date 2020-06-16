@@ -8,6 +8,7 @@ public class HashMapDetailsImpl {
         hm.put("abcdf","12345");
         hm.put("akcdf","04845");
         hm.put("abcjf","7685");
+        hm.compute("askdas",(s, s2) -> "88986");
 
         hm.keySet().stream().forEach(s -> System.out.println(s+">>"+hm.get(s)));
      }
