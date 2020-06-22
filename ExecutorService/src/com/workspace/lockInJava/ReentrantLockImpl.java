@@ -2,6 +2,9 @@ package com.workspace.lockInJava;
 
 import java.util.concurrent.locks.ReentrantLock;
 
+/*
+* */
+
 public class ReentrantLockImpl {
 
     private static ReentrantLock reentrantLock=new ReentrantLock();
