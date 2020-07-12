@@ -6,6 +6,12 @@ package lambda;
 
     each lamda call under the hood calls invokedynamic(
 */
+
+@FunctionalInterface
+interface LambdaFunction {
+    void m1();
+}
+
 public class LambdaFunctionImpl {
 
     public static void main(String[] args) {
