@@ -17,14 +17,18 @@ public class FindDuplicate {
 		
 		Set s=new HashSet();
 		List l=new ArrayList();
-		for(int i=0;i<s1.length();i++) {
+		/*for(int i=0;i<s1.length();i++) {
 			if(!s.add(""+s1.charAt(i))) {
 				//System.out.println("Duplicate Character: "+s1.charAt(i));
 				l.add(s1.charAt(i));
 			}
-		}
-		System.out.println("Duplicate Characters are: "+Arrays.toString(l.toArray()));
+		}*/
+		//System.out.println("Duplicate Characters are: "+Arrays.toString(l.toArray()));
 
+		s1.chars()
+				.mapToObj(i->(char)i)
+				.filter(i-> !s.add(i))
+				.forEach(System.out::println);
 	}
 
 }
