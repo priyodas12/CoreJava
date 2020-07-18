@@ -3,7 +3,9 @@ package comparable;
 import java.util.ArrayList;
 import java.util.Collections;
 
-/*a negative integer, zero, or a positive integer as this object is less than, equal to, or greater than the specified object.
+/*
+
+a negative integer, zero, or a positive integer as this object is less than, equal to, or greater than the specified object.
 
 Use Comparable:
 
